@@ -22,7 +22,8 @@ export async function getCharacter(characterId) {
 }
 
 const Characters = async ({ params }) => {
-    const character = await getCharacter(params.characterId)
+    const { characterId } = await params
+    const character = await getCharacter(characterId)
     // console.log("[CharcterDisplay]", character)
   return (
     <div>
