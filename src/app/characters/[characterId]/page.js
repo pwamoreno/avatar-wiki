@@ -28,8 +28,8 @@ const Characters = async ({ params }) => {
   return (
     <div>
         <img src={character.photoUrl} alt=''/>
-        <h1>{ character.name }</h1>
-        <p>Affiliation: { character.affiliation}</p>
+        <h1>{character.name }</h1>
+        <p>Affiliation: {character.affiliation}</p>
     </div>
   )
 }
